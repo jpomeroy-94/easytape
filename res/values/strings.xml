@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Easytape</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btnCapture">Capture</string>
+    <string name="btnExit">Exit</string>
+    <string name="btnEdit">Edit</string>
+    <string name="btnStop">Stop</string>
+    <string name="title_activity_playback">PlaybackActivity</string>
+    <string name="bypass_app_name">BasicMediaDecoder</string>
+    <string name="intro_message">
+<![CDATA[
+         
+             
+             This activity uses a TextureView to render the frames of a video decoded using the
+             MediaCodec API.
+             
+         
+        ]]>
+    </string>
+    <string name="app_video_attrib">(c) copyright 2008, Blender Foundation / www.bigbuckbunny.org</string>
+    <string name="title_activity_capture">CaptureActivity</string>
+    <string name="title_activity_video_info">VideoInfoActivity</string>
+    <string name="filerow">Save</string>
+    <string name="fileexitrow">Save and exit</string>
+    <string name="exitrow">Exit</string>
+    <string name="title_activity_video_list">VideoListActivity</string>
+    <string name="activity_video_list_title">Media List</string>
+    <string name="playrow">Play</string>
+    <string name="recyclerow">Recycle</string>
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jeffreypomeroy.easytape"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
+    <!-- This app records A/V content from camera and stores it to disk -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Main part of program -->
+        <activity
+            android:name="com.jeffreypomeroy.easytape.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- playback -->
+        <activity
+            android:name="com.jeffreypomeroy.easytape.PlaybackActivity"
+            android:label="@string/title_activity_playback" >
+        </activity>
+        <!-- capture -->
+        <activity
+            android:name="com.jeffreypomeroy.easytape.CaptureActivity"
+            android:label="@string/title_activity_capture"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.jeffreypomeroy.easytape.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.jeffreypomeroy.easytape.VideoInfoActivity"
+            android:label="@string/title_activity_video_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jeffreypomeroy.easytape.VideoListActivity"
+            android:label="@string/title_activity_video_list" >
+        </activity>
+        <activity
+            android:name="com.jeffreypomeroy.easytape.PlayerActivity"
+            android:label="@string/title_activity_player"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.jeffreypomeroy.easytape.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_camera"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_repeat"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+<ScrollView 
+          android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/datelabel_tv"
+                    style="@style/formlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_tv"
+                    style="@style/formvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/timelabel_tv"
+                    style="@style/formlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    style="@style/formvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pathlabel_tv"
+                    style="@style/formlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Path:" />
+
+                <TextView
+                    android:id="@+id/path_tv"
+                    style="@style/formvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/filenamelabel_tv"
+                    style="@style/formlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="name:" />
+
+                <TextView
+                    android:id="@+id/filename_tv"
+                    style="@style/formvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/timelabel_tv"
+                    style="@style/formlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="type:" />
+
+                <TextView
+                    android:id="@+id/filetype_tv"
+                    style="@style/formvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/gpslabel_tv"
+                    style="@style/formlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="gps:" />
+
+                <TextView
+                    android:id="@+id/gps_tv"
+                    style="@style/formvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="n.nnnnn" />
+
+                <TextView
+                    android:id="@+id/filesizelabel_tv"
+                    style="@style/formlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="size:" />
+
+                <TextView
+                    android:id="@+id/filesize_tv"
+                    style="@style/formvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titlelabel_tv"
+                style="@style/formlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="--- title ---" />
+
+            <EditText
+                android:id="@+id/title_et"
+                style="@style/formvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/desclabel_tv"
+                style="@style/formlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="--- description ---" />
+
+            <EditText
+                android:id="@+id/description_et"
+                style="@style/formvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/file_bt"
+                    style="@style/standardbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filerow" />
+
+                <Button
+                    android:id="@+id/fileexit_bt"
+                    style="@style/standardbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fileexitrow" />
+
+                <Button
+                    android:id="@+id/play_bt"
+                    style="@style/standardbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playrow" />
+
+                <Button
+                    android:id="@+id/recycle_bt"
+                    style="@style/standardbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recyclerow" />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+ 
+</LinearLayout>

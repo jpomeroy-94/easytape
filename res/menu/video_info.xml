@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_info_home"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="home"/>
+       <item
+        android:id="@+id/menu_info_list"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="list"/>
+</menu>

@@ -1,0 +1,12 @@
+   <TextView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menuoptiontv"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:textSize="50dp"
+        android:text="Large Text"
+        android:textColor="@color/ghostwhite"
+        android:textAppearance="?android:attr/textAppearanceLarge" />

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item android:id="@+id/menu_list_exit"
+          android:title="home"
+          android:showAsAction="ifRoom|withText" />
+<item android:id="@+id/menu_list_delete"
+          android:title="Clear Recycle Bin"
+          android:showAsAction="never" />
+<item android:id="@+id/menu_list_recycle"
+          android:title="Display Recycle Bin"
+          android:showAsAction="never" />
+</menu>
